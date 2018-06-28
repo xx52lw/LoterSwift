@@ -68,6 +68,7 @@
 		D0318DFA20732CAD004F295E /* MJRefreshComponent.m in Sources */ = {isa = PBXBuildFile; fileRef = D0318DDE20732CAD004F295E /* MJRefreshComponent.m */; };
 		D0A4947D20E47CB9001DF5FC /* LWTimerManageTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0A4947C20E47CB9001DF5FC /* LWTimerManageTool.swift */; };
 		D0A4948020E4A37B001DF5FC /* LWBannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0A4947F20E4A37B001DF5FC /* LWBannerView.swift */; };
+		D0A4948220E4C5CD001DF5FC /* LWBaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0A4948120E4C5CD001DF5FC /* LWBaseView.swift */; };
 		D0C0798D2079A0F5005A9E26 /* LWNewFeatureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0C0798C2079A0F5005A9E26 /* LWNewFeatureViewController.swift */; };
 		D5539CEB89C7BB2DC865F072 /* Pods_LoterSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EE8815735D58DF4FBF7C5798 /* Pods_LoterSwift.framework */; };
 /* End PBXBuildFile section */
@@ -169,6 +170,7 @@
 		D0318DE020732CAD004F295E /* MJRefreshBackFooter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJRefreshBackFooter.h; sourceTree = "<group>"; };
 		D0A4947C20E47CB9001DF5FC /* LWTimerManageTool.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LWTimerManageTool.swift; sourceTree = "<group>"; };
 		D0A4947F20E4A37B001DF5FC /* LWBannerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LWBannerView.swift; sourceTree = "<group>"; };
+		D0A4948120E4C5CD001DF5FC /* LWBaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LWBaseView.swift; sourceTree = "<group>"; };
 		D0C0798C2079A0F5005A9E26 /* LWNewFeatureViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LWNewFeatureViewController.swift; sourceTree = "<group>"; };
 		EE8815735D58DF4FBF7C5798 /* Pods_LoterSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LoterSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F9FACFAE921D54DB982CAD6B /* Pods-LoterSwift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LoterSwift.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LoterSwift/Pods-LoterSwift.debug.xcconfig"; sourceTree = "<group>"; };
@@ -383,6 +385,7 @@
 				D0318D622071D196004F295E /* LWBaseModel.swift */,
 				D0318D632071D196004F295E /* LWBaseTabBarController.swift */,
 				D0318D642071D196004F295E /* LWBaseViewController.swift */,
+				D0A4948120E4C5CD001DF5FC /* LWBaseView.swift */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -811,6 +814,7 @@
 				D0318DE620732CAD004F295E /* MJDIYBackFooter.m in Sources */,
 				D0318D332071D125004F295E /* AppDelegate.swift in Sources */,
 				D0318DEE20732CAD004F295E /* MJRefreshBackStateFooter.m in Sources */,
+				D0A4948220E4C5CD001DF5FC /* LWBaseView.swift in Sources */,
 				D0318D972071F46A004F295E /* SVRadialGradientLayer.m in Sources */,
 				D0318DA020732AAF004F295E /* LWUITools.swift in Sources */,
 				D0318D9D2071F61D004F295E /* LWProgressHUD.swift in Sources */,
