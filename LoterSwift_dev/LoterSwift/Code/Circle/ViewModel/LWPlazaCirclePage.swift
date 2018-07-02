@@ -23,6 +23,7 @@ class LWPlazaCirclePage: LWBaseViewController, LWBannerViewDelegate {
         super.viewDidLoad()
 
         
+
         bannerView.frame = CGRect.init(x: 0, y: 0, width: self.view.frame.size.width, height: 200)
         bannerView.backgroundColor = .clear
         let bannerArray = NSMutableArray()

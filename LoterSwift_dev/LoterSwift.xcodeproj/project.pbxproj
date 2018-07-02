@@ -70,6 +70,8 @@
 		D0A4948020E4A37B001DF5FC /* LWBannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0A4947F20E4A37B001DF5FC /* LWBannerView.swift */; };
 		D0A4948220E4C5CD001DF5FC /* LWBaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0A4948120E4C5CD001DF5FC /* LWBaseView.swift */; };
 		D0C0798D2079A0F5005A9E26 /* LWNewFeatureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0C0798C2079A0F5005A9E26 /* LWNewFeatureViewController.swift */; };
+		D0C659AE20E9B69B000AF5E7 /* LWSandBoxTools.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0C659AD20E9B69B000AF5E7 /* LWSandBoxTools.swift */; };
+		D0C659B020E9BB27000AF5E7 /* String+LW.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0C659AF20E9BB27000AF5E7 /* String+LW.swift */; };
 		D5539CEB89C7BB2DC865F072 /* Pods_LoterSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EE8815735D58DF4FBF7C5798 /* Pods_LoterSwift.framework */; };
 /* End PBXBuildFile section */
 
@@ -172,6 +174,8 @@
 		D0A4947F20E4A37B001DF5FC /* LWBannerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LWBannerView.swift; sourceTree = "<group>"; };
 		D0A4948120E4C5CD001DF5FC /* LWBaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LWBaseView.swift; sourceTree = "<group>"; };
 		D0C0798C2079A0F5005A9E26 /* LWNewFeatureViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LWNewFeatureViewController.swift; sourceTree = "<group>"; };
+		D0C659AD20E9B69B000AF5E7 /* LWSandBoxTools.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LWSandBoxTools.swift; sourceTree = "<group>"; };
+		D0C659AF20E9BB27000AF5E7 /* String+LW.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+LW.swift"; sourceTree = "<group>"; };
 		EE8815735D58DF4FBF7C5798 /* Pods_LoterSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LoterSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F9FACFAE921D54DB982CAD6B /* Pods-LoterSwift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LoterSwift.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LoterSwift/Pods-LoterSwift.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -353,6 +357,7 @@
 				D0318D9C2071F61D004F295E /* LWProgressHUD.swift */,
 				D0318D9F20732AAF004F295E /* LWUITools.swift */,
 				D0A4947C20E47CB9001DF5FC /* LWTimerManageTool.swift */,
+				D0C659AD20E9B69B000AF5E7 /* LWSandBoxTools.swift */,
 			);
 			path = Tools;
 			sourceTree = "<group>";
@@ -372,6 +377,7 @@
 				D0318D5B2071D196004F295E /* Bundle+Extension.swift */,
 				D0318D5C2071D196004F295E /* UIView+LW.swift */,
 				D0318D5D2071D196004F295E /* UIImage+LW.swift */,
+				D0C659AF20E9BB27000AF5E7 /* String+LW.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -765,6 +771,7 @@
 				D0318DEA20732CAD004F295E /* UIScrollView+MJExtension.m in Sources */,
 				D0318D802071D196004F295E /* LWMineViewController.swift in Sources */,
 				D0318DF020732CAD004F295E /* MJRefreshAutoStateFooter.m in Sources */,
+				D0C659B020E9BB27000AF5E7 /* String+LW.swift in Sources */,
 				D0318DF720732CAD004F295E /* MJRefreshHeader.m in Sources */,
 				D0A4948020E4A37B001DF5FC /* LWBannerView.swift in Sources */,
 				D0318D792071D196004F295E /* UIImage+LW.swift in Sources */,
@@ -789,6 +796,7 @@
 				D0318DF620732CAD004F295E /* MJRefreshFooter.m in Sources */,
 				D0318DEC20732CAD004F295E /* UIView+MJExtension.m in Sources */,
 				D0318DF420732CAD004F295E /* MJRefreshStateHeader.m in Sources */,
+				D0C659AE20E9B69B000AF5E7 /* LWSandBoxTools.swift in Sources */,
 				D0318DE420732CAD004F295E /* MJDIYAutoFooter.m in Sources */,
 				D0318DEF20732CAD004F295E /* MJRefreshBackNormalFooter.m in Sources */,
 				D0318DE720732CAD004F295E /* MJChiBaoZiHeader.m in Sources */,
