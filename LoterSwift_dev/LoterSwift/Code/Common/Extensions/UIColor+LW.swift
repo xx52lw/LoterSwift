@@ -8,7 +8,8 @@
 
 import Foundation
 import UIKit
-
+// ==================================================================================================================
+/// 颜色拓展方法
 extension UIColor {
     /// 根据数字颜色
     class func colorWithNum( _ r : CGFloat , g : CGFloat ,b : CGFloat, alpha: CGFloat = 1.0) -> UIColor {
@@ -51,3 +52,4 @@ extension UIColor {
         return UIColor.init(red: CGFloat(red / 255.0), green: CGFloat(green / 255.0), blue: CGFloat(blue / 255.0), alpha: 1.0)
     }
 }
+// ==================================================================================================================

@@ -10,7 +10,8 @@ import UIKit
 import Foundation
 import UIKit
 import Kingfisher
-
+// ==================================================================================================================
+/// image拓展方法
 extension UIImage {
     //MARK: 对Kingfisher的再次封装
     ///  对Kingfisher的再次封装
@@ -212,3 +213,4 @@ extension UIImage {
         return newImage;
     }
 }
+// ==================================================================================================================

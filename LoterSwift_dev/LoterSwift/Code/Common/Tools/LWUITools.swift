@@ -17,6 +17,7 @@ class LWUITools: NSObject {
         let option =  NSStringDrawingOptions.usesLineFragmentOrigin.rawValue | NSStringDrawingOptions.usesFontLeading.rawValue
         return str.boundingRect(with: maxSize, options: NSStringDrawingOptions(rawValue: option), attributes: [NSAttributedStringKey.font : font], context: nil).size
     }
+    /// 
     
 }
 // ==================================================================================================================

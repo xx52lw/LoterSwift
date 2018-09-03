@@ -8,7 +8,7 @@
 
 import UIKit
 
-class LWPlazaCirclePage: LWBaseViewController, LWBannerViewDelegate {
+class LWPlazaCirclePage: LWBaseViewController, LWBannerViewDelegate,LWTextFieldDelegate {
     
 
     
@@ -22,6 +22,12 @@ class LWPlazaCirclePage: LWBaseViewController, LWBannerViewDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        
+//        let btn  = UIButton.createImageAtRightBtn(<#T##titleFont: UIFont##UIFont#>, titleColor: <#T##UIColor#>, title: <#T##String?#>, image: <#T##UIImage#>, bgColor: <#T##UIColor?#>, target: <#T##Any?#>, action: <#T##Selector#>)
+        
+        let textField = LWTextField.createPlaceholderTextField(CGRect.init(x: 20, y: 300, width: 200, height: 20), placeholderString: "测试👍为")
+        textField.delegate = self
+        view.addSubview(textField)
         
 
         bannerView.frame = CGRect.init(x: 0, y: 0, width: self.view.frame.size.width, height: 200)
@@ -43,5 +49,8 @@ class LWPlazaCirclePage: LWBaseViewController, LWBannerViewDelegate {
         
     }
     
+    func textFielfChange(view: LWTextField, changeString: String) {
+        print(changeString)
+    }
 
 }
