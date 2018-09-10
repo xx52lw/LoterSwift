@@ -17,7 +17,30 @@ class LWUITools: NSObject {
         let option =  NSStringDrawingOptions.usesLineFragmentOrigin.rawValue | NSStringDrawingOptions.usesFontLeading.rawValue
         return str.boundingRect(with: maxSize, options: NSStringDrawingOptions(rawValue: option), attributes: [NSAttributedStringKey.font : font], context: nil).size
     }
-    /// 
+    /// 操作两个数 op 操作 @"+" ,@"-",@"*",@"/"
+    class func decimalNumber(_ num1 : Double, num2 : Double, operation : String) -> String {
+        let n1 = NSDecimalNumber.init(string: "\(num1)")
+        let n2 = NSDecimalNumber.init(string: "\(num2)")
+        if "+" == operation {
+            let re = n1.adding(n2)
+            return re.stringValue
+        }
+        else if "-" == operation {
+            let re = n1.subtracting(n2)
+            return re.stringValue
+        }
+        else if "*" == operation {
+            let re = n1.multiplying(by: n2)
+            return re.stringValue
+        }
+        else if "/" == operation {
+            let re = n1.dividing(by: n2)
+            return re.stringValue
+        }
+        else {
+            return "0"
+        }
+    }
     
 }
 // ==================================================================================================================
