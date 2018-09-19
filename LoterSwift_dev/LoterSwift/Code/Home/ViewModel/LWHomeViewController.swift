@@ -13,7 +13,7 @@ class LWHomeViewController: LWBaseViewController {
     
     /// 列表视图
     lazy var tableView : UITableView = {
-        let view = UITableView.init(frame: CGRect.zero, style: UITableViewStyle.plain)
+        let view = UITableView.init(frame: CGRect.zero, style: UITableView.Style.plain)
         view.backgroundColor = UIColor.red
         return view
     }()

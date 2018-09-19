@@ -25,11 +25,11 @@ class LWNewFeatureViewController: LWBaseViewController {
     /// 遮盖按钮
     //MARK:  遮盖按钮
     lazy var coverBtn: UIButton = {
-        let btn = UIButton.init(type: UIButtonType.custom)
+        let btn = UIButton.init(type: UIButton.ButtonType.custom)
         btn.frame = self.view.bounds
         btn.backgroundColor = UIColor.clear
         btn.isHidden = true
-        btn.addTarget(self, action: #selector(self.coverBtnClick(btn:)), for: UIControlEvents.touchUpInside)
+        btn.addTarget(self, action: #selector(self.coverBtnClick(btn:)), for: UIControl.Event.touchUpInside)
         return btn
     }()
 

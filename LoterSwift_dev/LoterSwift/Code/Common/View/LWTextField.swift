@@ -45,7 +45,7 @@ class LWTextField: UIView {
         view.placeholderLabel.text = placeholderString
         view.placeholderLabel.textColor = UIColor.lightGray
         view.textField.frame = CGRect.init(x: 0, y: 0, width: frame.size.width, height: frame.size.height)
-        view.textField.addTarget(view, action: #selector(textFielfChange), for: UIControlEvents.editingChanged)
+        view.textField.addTarget(view, action: #selector(textFielfChange), for: UIControl.Event.editingChanged)
         view.textField.textColor = UIColor.black
         return view
     }

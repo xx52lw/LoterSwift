@@ -104,12 +104,12 @@ extension LWBannerView {
             currentIndex = currentIndex + 1
             if bannerArray.count > currentIndex {
                 pageControl.currentPage = currentIndex
-                collectionView.scrollToItem(at: IndexPath.init(row: pageControl.currentPage, section: 0), at: UICollectionViewScrollPosition.centeredHorizontally, animated: true)
+                collectionView.scrollToItem(at: IndexPath.init(row: pageControl.currentPage, section: 0), at: UICollectionView.ScrollPosition.centeredHorizontally, animated: true)
             }
             else {
                 currentIndex = 0;
                 pageControl.currentPage = currentIndex
-                collectionView.scrollToItem(at: IndexPath.init(row: pageControl.currentPage, section: 0), at: UICollectionViewScrollPosition.centeredHorizontally, animated: false)
+                collectionView.scrollToItem(at: IndexPath.init(row: pageControl.currentPage, section: 0), at: UICollectionView.ScrollPosition.centeredHorizontally, animated: false)
             }
         }
         else {

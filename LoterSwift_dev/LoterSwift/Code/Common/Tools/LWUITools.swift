@@ -15,7 +15,7 @@ class LWUITools: NSObject {
     class  func sizeWithStringFont(_ string : String?, font : UIFont, maxSize : CGSize) -> CGSize {
         let str = (string ?? "") as NSString
         let option =  NSStringDrawingOptions.usesLineFragmentOrigin.rawValue | NSStringDrawingOptions.usesFontLeading.rawValue
-        return str.boundingRect(with: maxSize, options: NSStringDrawingOptions(rawValue: option), attributes: [NSAttributedStringKey.font : font], context: nil).size
+        return str.boundingRect(with: maxSize, options: NSStringDrawingOptions(rawValue: option), attributes: [NSAttributedString.Key.font : font], context: nil).size
     }
     /// 操作两个数 op 操作 @"+" ,@"-",@"*",@"/"
     class func decimalNumber(_ num1 : Double, num2 : Double, operation : String) -> String {

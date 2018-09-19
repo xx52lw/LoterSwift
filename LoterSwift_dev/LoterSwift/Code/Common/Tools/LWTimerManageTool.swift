@@ -20,7 +20,7 @@ class LWTimerManageTool: NSObject {
     lazy var timer: Timer = {
         let t = Timer.scheduledTimer(timeInterval: 1.0, target:self,selector:#selector(beginTimer),
                                      userInfo:nil,repeats:true)
-        RunLoop.main.add(t, forMode: RunLoopMode.commonModes)
+        RunLoop.main.add(t, forMode: RunLoop.Mode.common)
         return t
     }()
     // MARK:  定时器运行

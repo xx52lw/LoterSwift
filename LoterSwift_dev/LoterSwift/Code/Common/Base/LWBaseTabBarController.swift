@@ -45,15 +45,15 @@ extension LWBaseTabBarController {
         self.tabBar.barTintColor = UIColor.colorFromHex(hex: tabbarColor)
         // 设置item中文字的样式
         let normalAttributes = [
-            NSAttributedStringKey.foregroundColor : UIColor.colorFromHex(hex: textColor),
-                                  NSAttributedStringKey.font : UIFont.systemFont(ofSize: CGFloat(Double(textFont)!)),
+            NSAttributedString.Key.foregroundColor : UIColor.colorFromHex(hex: textColor),
+                                  NSAttributedString.Key.font : UIFont.systemFont(ofSize: CGFloat(Double(textFont)!)),
                                 ]
-        self.tabBarItem.setTitleTextAttributes(normalAttributes, for: UIControlState.normal)
+        self.tabBarItem.setTitleTextAttributes(normalAttributes, for: UIControl.State.normal)
         let selectedAttributes = [
-                                NSAttributedStringKey.foregroundColor : UIColor.colorFromHex(hex: selectedTextColor),
-                                NSAttributedStringKey.font : UIFont.systemFont(ofSize: CGFloat(Double(textFont)!)),
+                                NSAttributedString.Key.foregroundColor : UIColor.colorFromHex(hex: selectedTextColor),
+                                NSAttributedString.Key.font : UIFont.systemFont(ofSize: CGFloat(Double(textFont)!)),
                                 ]
-        self.tabBarItem.setTitleTextAttributes(selectedAttributes, for: UIControlState.selected)
+        self.tabBarItem.setTitleTextAttributes(selectedAttributes, for: UIControl.State.selected)
         // 设置顶部线条颜色
         let tabbarTopLineColor = LWAppConfigurationModel.sharedInstance().tabbarTopLineColor
         if tabbarTopLineColor.count > 0 {
@@ -101,7 +101,7 @@ extension LWBaseTabBarController {
                 imageView.tag = tag
                 imageView.backgroundColor = UIColor.clear
                 imageView.image = image
-                imageView.contentMode = UIViewContentMode.scaleAspectFit
+                imageView.contentMode = UIView.ContentMode.scaleAspectFit
                 self.tabBar.addSubview(imageView)
             }
             else {
