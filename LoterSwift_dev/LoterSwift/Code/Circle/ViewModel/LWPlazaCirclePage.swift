@@ -24,6 +24,11 @@ class LWPlazaCirclePage: LWBaseViewController, LWBannerViewDelegate,LWTextFieldD
 
         
 //        let btn  = UIButton.createImageAtRightBtn(<#T##titleFont: UIFont##UIFont#>, titleColor: <#T##UIColor#>, title: <#T##String?#>, image: <#T##UIImage#>, bgColor: <#T##UIColor?#>, target: <#T##Any?#>, action: <#T##Selector#>)
+        let a = 0.06
+        let b = 0.02
+        let tabss = LWUITools.decimalNumber(a, num2: b, operation: "/")
+        print(tabss)
+        
         
         let textField = LWTextField.createPlaceholderTextField(CGRect.init(x: 20, y: 300, width: 200, height: 20), placeholderString: "测试👍为")
         textField.delegate = self

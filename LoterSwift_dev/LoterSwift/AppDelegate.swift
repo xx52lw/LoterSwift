@@ -49,7 +49,7 @@ extension AppDelegate {
     //MARK: 设置APP配置
     func setupApp() {
         // 设置键盘
-       IQKeyboardManager.sharedManager().enable = true
+       IQKeyboardManager.shared.enable = true
         NotificationCenter.default.removeObserver(self, name: NSNotification.Name(rawValue: LWSelectIntoAppControllerNotification), object: nil)
         NotificationCenter.default.addObserver(self, selector: #selector(selectShowViewController), name: NSNotification.Name(rawValue: LWSelectIntoAppControllerNotification), object: nil)
         // 开启全局定时器
