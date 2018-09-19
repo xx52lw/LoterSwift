@@ -74,6 +74,7 @@
 		D0C0798D2079A0F5005A9E26 /* LWNewFeatureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0C0798C2079A0F5005A9E26 /* LWNewFeatureViewController.swift */; };
 		D0C659AE20E9B69B000AF5E7 /* LWSandBoxTools.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0C659AD20E9B69B000AF5E7 /* LWSandBoxTools.swift */; };
 		D0C659B020E9BB27000AF5E7 /* String+LW.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0C659AF20E9BB27000AF5E7 /* String+LW.swift */; };
+		D0CD3BFD21521E3500099A09 /* LWTestModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0CD3BFC21521E3500099A09 /* LWTestModel.swift */; };
 		D5539CEB89C7BB2DC865F072 /* Pods_LoterSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EE8815735D58DF4FBF7C5798 /* Pods_LoterSwift.framework */; };
 /* End PBXBuildFile section */
 
@@ -180,6 +181,7 @@
 		D0C0798C2079A0F5005A9E26 /* LWNewFeatureViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LWNewFeatureViewController.swift; sourceTree = "<group>"; };
 		D0C659AD20E9B69B000AF5E7 /* LWSandBoxTools.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LWSandBoxTools.swift; sourceTree = "<group>"; };
 		D0C659AF20E9BB27000AF5E7 /* String+LW.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+LW.swift"; sourceTree = "<group>"; };
+		D0CD3BFC21521E3500099A09 /* LWTestModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LWTestModel.swift; sourceTree = "<group>"; };
 		EE8815735D58DF4FBF7C5798 /* Pods_LoterSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LoterSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F9FACFAE921D54DB982CAD6B /* Pods-LoterSwift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LoterSwift.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LoterSwift/Pods-LoterSwift.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -269,7 +271,6 @@
 			children = (
 				D0318D472071D196004F295E /* ViewModel */,
 				D0318D492071D196004F295E /* Model */,
-				D0318D4A2071D196004F295E /* View */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -286,15 +287,9 @@
 			isa = PBXGroup;
 			children = (
 				D0318D852071D779004F295E /* LWCommonConfigModel.swift */,
+				D0CD3BFC21521E3500099A09 /* LWTestModel.swift */,
 			);
 			path = Model;
-			sourceTree = "<group>";
-		};
-		D0318D4A2071D196004F295E /* View */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = View;
 			sourceTree = "<group>";
 		};
 		D0318D4B2071D196004F295E /* Bill */ = {
@@ -784,6 +779,7 @@
 				D0318D772071D196004F295E /* Bundle+Extension.swift in Sources */,
 				D0318D732071D196004F295E /* LWTabItemsConfigurationModel.swift in Sources */,
 				D0318DF820732CAD004F295E /* MJRefreshBackFooter.m in Sources */,
+				D0CD3BFD21521E3500099A09 /* LWTestModel.swift in Sources */,
 				D0318DF620732CAD004F295E /* MJRefreshFooter.m in Sources */,
 				D0318DEC20732CAD004F295E /* UIView+MJExtension.m in Sources */,
 				D0318DF420732CAD004F295E /* MJRefreshStateHeader.m in Sources */,

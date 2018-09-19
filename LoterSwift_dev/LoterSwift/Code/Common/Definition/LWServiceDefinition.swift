@@ -12,12 +12,13 @@ import UIKit
 // 请求头部
 
 // 请求URL
-let kUrlBase = "https://api.91naju.com/merchant/app"
+let developUrl = "http://api.test.btgonline.net/customer2"
+let productUrl = "https://api.customer.btghl.com"
+let kUrlBase = (LWIsProduct == true ? productUrl : developUrl)
 
-//
 
 let kURLAppCommonConfig = "/app/getAppCommonConfig"  // APP系统公用内容
-
+let kURLtest = "/app/bizclass/read/list"  // 测试
 
 
 

@@ -108,9 +108,10 @@ class LWNetWorkingTool<T:HandyJSON >: NSObject {
             }
             else {
                 let baseModel = JSONDeserializer<LWBaseModel>.deserializeFrom(json: jsonString)
-                if baseModel?.code == 1 {
+                if baseModel?.httpCode == 200 {
                     print(jsonString)
-                    let jsonModel = JSONDeserializer<T>.deserializeFrom(json: jsonString, designatedPath: "data")
+//                    let jsonModel = JSONDeserializer<T>.deserializeFrom(json: jsonString, designatedPath: "data")
+                    let jsonModel = JSONDeserializer<T>.deserializeFrom(json: jsonString, designatedPath: "")
                     successBlock(jsonModel)
                 }
                 else {

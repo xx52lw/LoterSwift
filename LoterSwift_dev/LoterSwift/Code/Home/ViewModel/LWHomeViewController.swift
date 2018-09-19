@@ -50,9 +50,9 @@ extension LWHomeViewController {
     @objc func requestData()  {
         tableView.mj_header.endRefreshing()
        LWProgressHUD.show(infoStr: "正在加载。。。")
-        LWNetWorkingTool<LWCommonConfigModel>.getDataFromeServiceRequest(url: kURLAppCommonConfig, successBlock: { jsonModel  in
+        LWNetWorkingTool<LWTestModel>.postDataFromeServiceRequest(url: kURLtest, successBlock: { jsonModel  in
             LWProgressHUD.dismiss()
-            print(jsonModel?.servicePhone! as Any)
+            print(jsonModel as Any)
         }) { (error) in
             LWProgressHUD.dismiss()
         }

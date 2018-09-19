@@ -9,7 +9,7 @@
 import UIKit
 import HandyJSON
 class LWBaseModel: HandyJSON {
-    var code : Int?
+    var httpCode : Int?
     var message : String?
     required init() {
         
