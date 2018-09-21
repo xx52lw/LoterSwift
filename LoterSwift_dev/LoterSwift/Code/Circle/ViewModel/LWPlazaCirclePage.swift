@@ -51,7 +51,8 @@ class LWPlazaCirclePage: LWBaseViewController, LWBannerViewDelegate,LWTextFieldD
     }
 
     func bannerViewClick(view: LWBannerView, selectIndex: Int) {
-        
+        let vc = LWTestViewController()
+        navigationController?.pushViewController(vc, animated: true)
     }
     
     func textFielfChange(view: LWTextField, changeString: String) {

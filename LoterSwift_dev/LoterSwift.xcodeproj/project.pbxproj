@@ -66,6 +66,7 @@
 		D0318DF820732CAD004F295E /* MJRefreshBackFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = D0318DDB20732CAD004F295E /* MJRefreshBackFooter.m */; };
 		D0318DF920732CAD004F295E /* MJRefreshAutoFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = D0318DDC20732CAD004F295E /* MJRefreshAutoFooter.m */; };
 		D0318DFA20732CAD004F295E /* MJRefreshComponent.m in Sources */ = {isa = PBXBuildFile; fileRef = D0318DDE20732CAD004F295E /* MJRefreshComponent.m */; };
+		D05FD7BC2154ABCC003E1487 /* LWTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D05FD7BB2154ABCC003E1487 /* LWTestViewController.swift */; };
 		D06F17F8213CD779007F3462 /* LWTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = D06F17F7213CD779007F3462 /* LWTextField.swift */; };
 		D0A12573211C1AE800D6536E /* UIButton+LW.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0A12572211C1AE800D6536E /* UIButton+LW.swift */; };
 		D0A4947D20E47CB9001DF5FC /* LWTimerManageTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0A4947C20E47CB9001DF5FC /* LWTimerManageTool.swift */; };
@@ -173,6 +174,7 @@
 		D0318DDE20732CAD004F295E /* MJRefreshComponent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJRefreshComponent.m; sourceTree = "<group>"; };
 		D0318DDF20732CAD004F295E /* MJRefreshFooter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJRefreshFooter.h; sourceTree = "<group>"; };
 		D0318DE020732CAD004F295E /* MJRefreshBackFooter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJRefreshBackFooter.h; sourceTree = "<group>"; };
+		D05FD7BB2154ABCC003E1487 /* LWTestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LWTestViewController.swift; sourceTree = "<group>"; };
 		D06F17F7213CD779007F3462 /* LWTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LWTextField.swift; sourceTree = "<group>"; };
 		D0A12572211C1AE800D6536E /* UIButton+LW.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton+LW.swift"; sourceTree = "<group>"; };
 		D0A4947C20E47CB9001DF5FC /* LWTimerManageTool.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LWTimerManageTool.swift; sourceTree = "<group>"; };
@@ -442,6 +444,7 @@
 			isa = PBXGroup;
 			children = (
 				D0318D6C2071D196004F295E /* LWPlazaCirclePage.swift */,
+				D05FD7BB2154ABCC003E1487 /* LWTestViewController.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -768,6 +771,7 @@
 				D0318DFA20732CAD004F295E /* MJRefreshComponent.m in Sources */,
 				D0318DEB20732CAD004F295E /* NSBundle+MJRefresh.m in Sources */,
 				D0318D812071D196004F295E /* LWPlazaCirclePage.swift in Sources */,
+				D05FD7BC2154ABCC003E1487 /* LWTestViewController.swift in Sources */,
 				D0318D702071D196004F295E /* LWBillViewController.swift in Sources */,
 				D0318D862071D779004F295E /* LWCommonConfigModel.swift in Sources */,
 				D0318DF520732CAD004F295E /* MJRefreshGifHeader.m in Sources */,
@@ -959,7 +963,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.liwei.LoterSwift;
+				PRODUCT_BUNDLE_IDENTIFIER = com.naju.main;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "LoterSwift/Code/OC/LoterSwift-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -982,7 +986,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.liwei.LoterSwift;
+				PRODUCT_BUNDLE_IDENTIFIER = com.naju.main;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "LoterSwift/Code/OC/LoterSwift-Bridging-Header.h";
 				SWIFT_VERSION = 4.2;

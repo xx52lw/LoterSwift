@@ -74,7 +74,8 @@ extension UIImage {
         UIGraphicsEndImageContext()
         return colorImage
     }
-    ///
+    //MARK: 获取尺寸图片
+    /// 获取尺寸图片
     class func imageMarginImage(size: CGSize , origionImage : UIImage) -> UIImage? {
         UIGraphicsBeginImageContext(size)
         let imageRect = CGRect.init(x: (size.width - origionImage.size.width) / 2, y: (size.height - origionImage.size.height) / 2, width: origionImage.size.width, height: origionImage.size.height)
