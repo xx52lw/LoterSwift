@@ -28,7 +28,11 @@ func LWRGB( _ r : CGFloat , g : CGFloat ,b : CGFloat) -> UIColor {
 let LWGlobalPlaceHolderImage = UIImage.imageFromeBundleFile(fileName: "comment", imageName: "PlaceHolderImage")
 
 /// 发送通知
-func LWPOSTNotification( NotificationName notificationName : String) {
+func LWPOSTNotification( NotificationName notificationName : String , object : Any?) {
+    return NotificationCenter.default.post(name: NSNotification.Name(rawValue: notificationName), object: object, userInfo: nil)
+}
+/// 发送通知
+func LWPOSTNotification( NotificationName notificationName : String ) {
     return NotificationCenter.default.post(name: NSNotification.Name(rawValue: notificationName), object: nil, userInfo: nil)
 }
 /// 添加通知

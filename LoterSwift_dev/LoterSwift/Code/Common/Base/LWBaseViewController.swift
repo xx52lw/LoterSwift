@@ -18,11 +18,13 @@ class LWBaseViewController: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         setnNav()
+        LWAddNotification(self, selector: #selector(listenNetworkChangeFun(notify:)), NotificationName: LWListenNetworkNotification)
     }
     //MARK: - 重写viewWillDisappear
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
         self.view.endEditing(true)
+        LWRemoveNotification(self, NotificationName: LWListenNetworkNotification)
     }
     //MARK: - 重写viewDidLoad
     override func viewDidLoad() {
@@ -54,6 +56,7 @@ class LWBaseViewController: UIViewController {
         
     }
     //MARK: 返回按钮点击
+    /// 返回按钮点击
     @objc func backAction() {
         view.endEditing(true)
         navigationController?.popViewController(animated: true)
@@ -93,6 +96,34 @@ class LWBaseViewController: UIViewController {
         
     }
    
+    // MARK:  网络状态改变的方法
+    ///
+    @objc func listenNetworkChangeFun(notify : NSNotification) {
+        
+        guard let status = notify.object as? LWListenNetworkToolStatus else {
+            return
+        }
+        switch status {
+        case .beginListen: do {
+               print("开始监听")
+            }
+        case .notReachable: do { //
+            print("网络不可达")
+            }
+        case .unknown: do {//
+            print("未知网络")
+            }
+        case .ethernetOrWiFi: do { //
+            print("WiFi网络")
+            }
+        case .wwan: do{
+            print("蜂窝网络")
+            }
+        case .stopListen: do {
+            print("停止监听")
+            }
+        }
+    }
      
 }
 // ================================================================================================================================

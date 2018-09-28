@@ -23,11 +23,16 @@ class LWPlazaCirclePage: LWBaseViewController, LWBannerViewDelegate,LWTextFieldD
         super.viewDidLoad()
 
         
-//        let btn  = UIButton.createImageAtRightBtn(<#T##titleFont: UIFont##UIFont#>, titleColor: <#T##UIColor#>, title: <#T##String?#>, image: <#T##UIImage#>, bgColor: <#T##UIColor?#>, target: <#T##Any?#>, action: <#T##Selector#>)
+
         let a = 0.06
         let b = 0.02
         let tabss = LWUITools.decimalNumber(a, num2: b, operation: "/")
         print(tabss)
+        
+        
+        
+
+        
         
         
         let textField = LWTextField.createPlaceholderTextField(CGRect.init(x: 20, y: 300, width: 200, height: 20), placeholderString: "测试👍为")
@@ -35,6 +40,10 @@ class LWPlazaCirclePage: LWBaseViewController, LWBannerViewDelegate,LWTextFieldD
         view.addSubview(textField)
         
 
+        let btn = UIButton.createTitleBtn(UIFont.systemFont(ofSize: 15), titleColor:  UIColor.black, title: "重复点击", bgColor: nil, target: self, action: #selector(clickBtn))
+        btn.frame = CGRect.init(x: 20, y: 350, width: 200, height: 20)
+        view.addSubview(btn)
+        
         bannerView.frame = CGRect.init(x: 0, y: 0, width: self.view.frame.size.width, height: 200)
         bannerView.backgroundColor = .clear
         let bannerArray = NSMutableArray()
@@ -50,6 +59,11 @@ class LWPlazaCirclePage: LWBaseViewController, LWBannerViewDelegate,LWTextFieldD
         // Do any additional setup after loading the view.
     }
 
+    @objc func clickBtn() {
+        print("==========")
+    }
+    
+    
     func bannerViewClick(view: LWBannerView, selectIndex: Int) {
         let vc = LWTestViewController()
         navigationController?.pushViewController(vc, animated: true)

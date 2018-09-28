@@ -14,5 +14,8 @@ import UIKit
 let LWSelectIntoAppControllerNotification = "LWSelectIntoAppControllerNotification"
 /// 全局定时器的通知
 let LWTimerNotification = "LWTimerNotification"
+/// 监听落网的通知
+let LWListenNetworkNotification = "LWListenNetworkNotification"
+
 
 //================================================================================================================================
