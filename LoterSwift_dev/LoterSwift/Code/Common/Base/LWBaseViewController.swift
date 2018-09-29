@@ -13,28 +13,43 @@ class LWBaseViewController: UIViewController {
 
     /// 是否允许拖拽（默认允许）
     var allPopGestureRecognizer = true
+    /// 导航栏背景图片
+    var navBgImage : UIImage?
     
     //MARK: - 重写viewWillAppear
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        setnNav()
-        LWAddNotification(self, selector: #selector(listenNetworkChangeFun(notify:)), NotificationName: LWListenNetworkNotification)
-    }
-    //MARK: - 重写viewWillDisappear
-    override func viewWillDisappear(_ animated: Bool) {
-        super.viewWillDisappear(animated)
-        self.view.endEditing(true)
-        LWRemoveNotification(self, NotificationName: LWListenNetworkNotification)
     }
     //MARK: - 重写viewDidLoad
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-         view.backgroundColor = UIColor.colorFromHex(hex: LWAppConfigurationModel.sharedInstance().defaultControllerBgColor)
+        view.backgroundColor = UIColor.colorFromHex(hex: LWAppConfigurationModel.sharedInstance().defaultControllerBgColor)
+        // 使其从导航条下绘制
+        navigationController?.navigationBar.isTranslucent = false
+        self.edgesForExtendedLayout = UIRectEdge.init(rawValue: 0)
+        self.automaticallyAdjustsScrollViewInsets = false;
         
         checkLeftBar()
-        
     }
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        addNotifty()
+        setnNav()
+    }
+    //MARK: - 重写viewWillDisappear
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        self.view.endEditing(true)
+    }
+    override func viewDidDisappear(_ animated: Bool) {
+        super.viewDidDisappear(animated)
+        removeNotify()
+    }
+    deinit {
+        removeNotify()
+    }
+   
     //MARK: 检查返回按钮
     private func checkLeftBar() {
        
@@ -61,16 +76,27 @@ class LWBaseViewController: UIViewController {
         view.endEditing(true)
         navigationController?.popViewController(animated: true)
     }
-    
+    // MARK: 移除通知
+    /// 移除通知
+    func removeNotify() {
+        LWRemoveNotification(self, NotificationName: LWListenNetworkNotification)
+    }
+    // MARK: 添加通知
+    /// 添加通知
+    func addNotifty() {
+        removeNotify()
+        LWAddNotification(self, selector: #selector(listenNetworkChangeFun(notify:)), NotificationName: LWListenNetworkNotification)
+        
+    }
     //MARK: 设置导航条
     func setnNav() {
-        
         guard let bar = self.navigationController?.navigationBar else {
             return
         }
         bar.barStyle = UIBarStyle.black // 设置成白色
-        let bgImage = UIImage.imageMarginImage(size:  CGSize.init(width: LWAppScreenWidth, height: 64.0), origionImage: UIImage.init(named: "nav_bg")!)
-        bar.setBackgroundImage(bgImage, for: UIBarMetrics.default)
+        navBgImage = UIImage.imageMarginImage(size:  CGSize.init(width: LWAppScreenWidth, height: 64.0), origionImage: UIImage.init(named: "nav_bg")!)
+        // 这里导航栏透明，可以把navBgImage = UIImage(),和导航栏穿透效果改变
+        bar.setBackgroundImage(navBgImage, for: UIBarMetrics.default)
         //设置标题栏文字
         var navTitleColor = LWAppConfigurationModel.sharedInstance().navTitleColor
         if navTitleColor.count <= 0 {

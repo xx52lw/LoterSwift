@@ -12,10 +12,6 @@ class LWBaseNavigationController: UINavigationController,UIGestureRecognizerDele
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
-        
-        
         weak var wself = self
         if responds(to: #selector(getter: interactivePopGestureRecognizer)) {
             interactivePopGestureRecognizer?.delegate = wself as UIGestureRecognizerDelegate?
@@ -23,6 +19,7 @@ class LWBaseNavigationController: UINavigationController,UIGestureRecognizerDele
         }
     }
 
+   
     override func pushViewController(_ viewController: UIViewController, animated: Bool) {
         if viewControllers.count > 0 {
             viewController.hidesBottomBarWhenPushed = true

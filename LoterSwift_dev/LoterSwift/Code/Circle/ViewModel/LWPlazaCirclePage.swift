@@ -59,6 +59,10 @@ class LWPlazaCirclePage: LWBaseViewController, LWBannerViewDelegate,LWTextFieldD
         // Do any additional setup after loading the view.
     }
 
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+    }
+    
     @objc func clickBtn() {
         print("==========")
     }
